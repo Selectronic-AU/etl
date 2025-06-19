@@ -759,6 +759,7 @@ namespace etl
 #if ETL_IS_DEBUG_BUILD
       difference_type d = etl::distance(first, last);
       ETL_ASSERT(d >= 0, ETL_ERROR(string_iterator));
+      (void)d;
 #endif
 
       initialise();
