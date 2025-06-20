@@ -800,6 +800,7 @@ namespace etl
       difference_type d = etl::distance(first_, last_);
       ETL_ASSERT(d >= 0, ETL_ERROR(unordered_map_iterator));
       ETL_ASSERT(size_t(d) <= max_size(), ETL_ERROR(unordered_map_full));
+      (void)d;
 #endif
 
       clear();

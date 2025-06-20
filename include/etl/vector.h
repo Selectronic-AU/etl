@@ -386,6 +386,7 @@ namespace etl
 #if ETL_IS_DEBUG_BUILD
       difference_type d = etl::distance(first, last);
       ETL_ASSERT_OR_RETURN(static_cast<size_t>(d) <= CAPACITY, ETL_ERROR(vector_full));
+      (void)d;
 #endif
 
       initialise();
